@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SnakeSpecies" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/snake/snake_species.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "cottonmouth"
+display_name = "Cottonmouth"
+dorsal = Color(0.22, 0.24, 0.14, 1)
+ventral = Color(0.55, 0.48, 0.32, 1)
+pattern = Color(0.08, 0.09, 0.05, 1)
+pattern_type = 2
+pattern_scale = 9.0
+scale_scale = 34.0
+speed = 3.7
+burst_speed = 6.1
+turn_rate = 2.6
+radius = 0.08
+start_length = 3.6
+undulation_amp = 0.04
+undulation_freq = 6.8
+wetness = 0.55
+sss = 0.3

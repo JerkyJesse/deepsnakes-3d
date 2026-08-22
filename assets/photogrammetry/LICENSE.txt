@@ -1,0 +1,4 @@
+Poly Haven textures and HDRIs are CC0 (public domain).
+https://polyhaven.com/license
+
+Fetched with tools/fetch_polyhaven.ps1 into per-biome folders.

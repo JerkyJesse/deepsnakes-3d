@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SnakeSpecies" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/snake/snake_species.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "ball_python"
+display_name = "Ball Python"
+dorsal = Color(0.42, 0.28, 0.14, 1)
+ventral = Color(0.78, 0.68, 0.48, 1)
+pattern = Color(0.12, 0.08, 0.04, 1)
+pattern_type = 0
+pattern_scale = 14.0
+scale_scale = 36.0
+speed = 3.4
+burst_speed = 5.6
+turn_rate = 2.4
+radius = 0.075
+start_length = 3.8
+undulation_amp = 0.045
+undulation_freq = 7.5
+wetness = 0.28
+sss = 0.22

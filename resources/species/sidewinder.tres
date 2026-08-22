@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SnakeSpecies" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/snake/snake_species.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "sidewinder"
+display_name = "Sidewinder"
+dorsal = Color(0.72, 0.58, 0.34, 1)
+ventral = Color(0.9, 0.82, 0.62, 1)
+pattern = Color(0.45, 0.32, 0.16, 1)
+pattern_type = 3
+pattern_scale = 16.0
+scale_scale = 40.0
+speed = 4.6
+burst_speed = 7.2
+turn_rate = 3.2
+radius = 0.055
+start_length = 2.9
+undulation_amp = 0.08
+undulation_freq = 10.0
+wetness = 0.12
+sss = 0.14

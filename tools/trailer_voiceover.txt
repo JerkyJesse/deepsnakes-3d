@@ -1,0 +1,11 @@
+# DeepSnakes 3D trailer voiceover
+# Timed to tools/trailer_director.gd. Spoken with en-US-GuyNeural via edge-tts.
+
+0:00.6  Deep Snakes.
+0:02.4  You are the snake.
+0:08.5  Forest floor. First person. Mouse steers. Eat to grow. Do not hit yourself.
+0:28.5  Desert wash. Sidewinder. Boost until the sand blurs.
+0:48.5  Blackwater swamp. Cottonmouth. Strike through the fog.
+1:08.5  Red canyon. Hit another snake, and the longer body wins.
+1:28.5  Host a listen server. Friends join your LAN. Port seventy-seven seventy-seven.
+1:48.5  Four species. Four biomes. Deep Snakes.

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SnakeSpecies" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/snake/snake_species.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "timber_rattlesnake"
+display_name = "Timber Rattlesnake"
+dorsal = Color(0.55, 0.45, 0.28, 1)
+ventral = Color(0.82, 0.74, 0.55, 1)
+pattern = Color(0.18, 0.12, 0.07, 1)
+pattern_type = 1
+pattern_scale = 11.0
+scale_scale = 32.0
+speed = 4.1
+burst_speed = 6.8
+turn_rate = 2.8
+radius = 0.07
+start_length = 3.4
+undulation_amp = 0.055
+undulation_freq = 8.5
+wetness = 0.22
+sss = 0.18
