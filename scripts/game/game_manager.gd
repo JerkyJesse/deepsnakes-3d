@@ -65,8 +65,7 @@ func _process(delta: float) -> void:
 	var local := _local_snake()
 	var hint := ""
 	if GameState.mode == GameState.Mode.HOST:
-		var ips := Network.lan_ips()
-		hint = "Listen server  port %d  %s" % [Network.port, ", ".join(ips) if not ips.is_empty() else "localhost"]
+		hint = "Listen server  port %d" % Network.port
 	elif GameState.mode == GameState.Mode.CLIENT:
 		hint = "Connected to host"
 	else:

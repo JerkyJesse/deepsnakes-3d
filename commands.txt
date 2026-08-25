@@ -1,0 +1,17 @@
+git status
+git branch -vv
+git log -8 --oneline
+git remote -v
+git checkout -b hide-lan-ip-hud
+powershell -ExecutionPolicy Bypass -File tools/export_windows.ps1
+git ls-files export_presets.cfg
+Test-Path Godot_v4.7.2-stable_win64.exe
+Get-ChildItem export\windows
+git add README.md export_presets.cfg scripts/autoload/game_state.gd scripts/autoload/network.gd scripts/game/game_manager.gd scripts/ui/main_menu.gd commands.txt
+git commit -m "feat: hide LAN addresses from HUD and menu"
+git push -u origin HEAD
+gh pr create
+gh pr merge
+git checkout main
+git pull
+gh release create v0.1.1

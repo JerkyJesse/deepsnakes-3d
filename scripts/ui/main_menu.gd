@@ -65,13 +65,13 @@ func _build() -> void:
 
 	var join_row := HBoxContainer.new()
 	join_row.add_theme_constant_override("separation", 8)
-	var ip_l := Label.new()
-	ip_l.text = "Host IP"
-	ip_l.add_theme_color_override("font_color", Color(0.85, 0.82, 0.7))
-	join_row.add_child(ip_l)
+	var host_l := Label.new()
+	host_l.text = "Host"
+	host_l.add_theme_color_override("font_color", Color(0.85, 0.82, 0.7))
+	join_row.add_child(host_l)
 	_ip = LineEdit.new()
 	_ip.text = GameState.join_ip
-	_ip.placeholder_text = "192.168.x.x"
+	_ip.placeholder_text = ""
 	_ip.custom_minimum_size = Vector2(220, 0)
 	join_row.add_child(_ip)
 	v.add_child(join_row)
@@ -167,7 +167,7 @@ func _play_host() -> void:
 
 func _play_join() -> void:
 	_commit_settings()
-	_status.text = "Connecting to %s..." % GameState.join_ip
+	_status.text = "Connecting..."
 	var err := Network.join(GameState.join_ip, GameState.join_port)
 	if err != OK:
 		_status.text = "Join failed to start."
@@ -176,7 +176,4 @@ func _on_joined() -> void:
 	get_tree().change_scene_to_file(WORLD)
 
 func _host_hint() -> String:
-	var ips := Network.lan_ips()
-	if ips.is_empty():
-		return "Hosting uses port 7777. Share your LAN IP with friends."
-	return "Your LAN IP:  %s  ·  port 7777" % ", ".join(ips)
+	return "Listen server uses port 7777."
