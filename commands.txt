@@ -10,8 +10,9 @@ Get-ChildItem export\windows
 git add README.md export_presets.cfg scripts/autoload/game_state.gd scripts/autoload/network.gd scripts/game/game_manager.gd scripts/ui/main_menu.gd commands.txt
 git commit -m "feat: hide LAN addresses from HUD and menu"
 git push -u origin HEAD
-gh pr create
-gh pr merge
+gh pr create --title "feat: hide LAN addresses from HUD and menu"
+gh pr checks 1 --watch
+gh pr merge 1 --merge --delete-branch
 git checkout main
-git pull
-gh release create v0.1.1
+gh release create v0.1.1 export/windows/DeepSnakes3D-windows.zip --title "DeepSnakes 3D 0.1.1"
+gh release view v0.1.1
