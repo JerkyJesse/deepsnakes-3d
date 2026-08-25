@@ -1,6 +1,6 @@
 # DeepSnakes 3D
 
-First-person snake in Godot 4.7. You are the snake: mouse steers, the body trails behind you as a live scaled tube, eat prey to grow, do not hit yourself. Offline or a **listen server** (you host and play; friends join your LAN IP).
+First-person snake in Godot 4.7. You are the snake: mouse steers, the body trails behind you as a live scaled tube, eat prey to grow, do not hit yourself. Offline or a **listen server** (you host and play; friends join on the LAN).
 
 ![First-person play](docs/previews/play-first-person.png)
 
@@ -14,7 +14,7 @@ Two-minute action gameplay with spoken voiceover, recorded from the live rendere
 
 ## Windows build
 
-Private repo. Grab `DeepSnakes3D-windows.zip` from the [v0.1.0 release](https://github.com/JerkyJesse/deepsnakes-3d/releases/tag/v0.1.0), unzip, run `DeepSnakes3D.exe`.
+Private repo. Grab `DeepSnakes3D-windows.zip` from the [v0.1.1 release](https://github.com/JerkyJesse/deepsnakes-3d/releases/tag/v0.1.1), unzip, run `DeepSnakes3D.exe`.
 
 Local rebuild (Godot **4.7.2** standard editor, Windows export templates already installed):
 
@@ -56,8 +56,8 @@ Output: `export/windows/DeepSnakes3D.exe` (gitignored).
 2. Press **F5**.
 3. Pick a species and biome.
 4. **Offline** — local game with AI snakes.
-5. **Host listen server** — you play on the host. Share a LAN IP shown in the HUD (port **7777**). Allow the port through the firewall if others cannot connect.
-6. **Join** — enter the host IP, then Join.
+5. **Host listen server** — you play on the host (port **7777**). Allow the port through the firewall if others cannot connect.
+6. **Join** — enter the host, then Join.
 
 ### Controls
 

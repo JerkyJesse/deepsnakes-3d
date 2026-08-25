@@ -50,14 +50,6 @@ func shutdown() -> void:
 	multiplayer.multiplayer_peer = null
 	GameState.reset_session()
 
-func lan_ips() -> PackedStringArray:
-	var out := PackedStringArray()
-	for a in IP.get_local_addresses():
-		if a.begins_with("127.") or ":" in a or a.begins_with("169.254."):
-			continue
-		out.append(a)
-	return out
-
 func _on_connected() -> void:
 	connected.emit()
 
